@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1691E3B91255487EAB4CB3E5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7A2770392D343A7B790A815 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				76B5E2B1CD4B4982B96F3C0A /* CMake Rules */,
+			);
+			dependencies = (
+				7E66B0E956F241AF83F22948 /* PBXTargetDependency */,
+				78ADC3AB18D648FBB2D463E0 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		BC2F3EC3E5CC42FAA5BF6F03 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 913566153D204E67AA62D13D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				9542CE86FE1B438282066E20 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8704F38A1BDEDDD9008A07A9 /* Box3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3691BDEDDD9008A07A9 /* Box3D.cpp */; };
+		8704F38B1BDEDDD9008A07A9 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F36B1BDEDDD9008A07A9 /* camera.cpp */; };
+		8704F38C1BDEDDD9008A07A9 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F36D1BDEDDD9008A07A9 /* controls.cpp */; };
+		8704F38D1BDEDDD9008A07A9 /* CoordSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F36F1BDEDDD9008A07A9 /* CoordSystem.cpp */; };
+		8704F38E1BDEDDD9008A07A9 /* GLAppearance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3711BDEDDD9008A07A9 /* GLAppearance.cpp */; };
+		8704F38F1BDEDDD9008A07A9 /* GLColoredBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3741BDEDDD9008A07A9 /* GLColoredBox.cpp */; };
+		8704F3901BDEDDD9008A07A9 /* GLObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3761BDEDDD9008A07A9 /* GLObject.cpp */; };
+		8704F3911BDEDDD9008A07A9 /* GLSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3791BDEDDD9008A07A9 /* GLSphere.cpp */; };
+		8704F3921BDEDDD9008A07A9 /* HCI557Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F37B1BDEDDD9008A07A9 /* HCI557Common.cpp */; };
+		8704F3931BDEDDD9008A07A9 /* HCI557Datatypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F37D1BDEDDD9008A07A9 /* HCI557Datatypes.cpp */; };
+		8704F3951BDEDDD9008A07A9 /* ModelObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3801BDEDDD9008A07A9 /* ModelObj.cpp */; };
+		8704F3961BDEDDD9008A07A9 /* Plane3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3821BDEDDD9008A07A9 /* Plane3D.cpp */; };
+		8704F3971BDEDDD9008A07A9 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3841BDEDDD9008A07A9 /* Shaders.cpp */; };
+		8704F3981BDEDDD9008A07A9 /* Sphere3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3861BDEDDD9008A07A9 /* Sphere3D.cpp */; };
+		8704F3991BDEDDD9008A07A9 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8704F3881BDEDDD9008A07A9 /* Texture.cpp */; };
+		879C4BF91BDED73E0040F0B0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C4BF81BDED73E0040F0B0 /* Cocoa.framework */; };
+		879C4BFB1BDED7450040F0B0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C4BFA1BDED7450040F0B0 /* CoreVideo.framework */; };
+		879C4BFF1BDED75E0040F0B0 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C4BFE1BDED75E0040F0B0 /* libglfw3.a */; };
+		879C4C011BDED76F0040F0B0 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C4C001BDED76F0040F0B0 /* libGLEW.a */; };
+		879C4C031BDED7770040F0B0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C4C021BDED7770040F0B0 /* IOKit.framework */; };
+		879C4C2E1BDED9A40040F0B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C4BFC1BDED74A0040F0B0 /* OpenGL.framework */; };
+		8DD154661C5549EBA779682F /* main_multi_texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E457D181849919E5A5164 /* main_multi_texture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B4427737FC04777A05C4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDCB5FD28FA42D88C83AC78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC2F3EC3E5CC42FAA5BF6F03;
+			remoteInfo = ZERO_CHECK;
+		};
+		A15C70C213AE4FB0AC91696F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDCB5FD28FA42D88C83AC78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC2F3EC3E5CC42FAA5BF6F03;
+			remoteInfo = ZERO_CHECK;
+		};
+		AF9AF0C39697405A9412BAE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDCB5FD28FA42D88C83AC78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26FAF48B519B45C99C09C174;
+			remoteInfo = HCI557_Multi_Texture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9CABAD812043F89A695554 /* HCI557_Multi_Texture */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HCI557_Multi_Texture; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C2E457D181849919E5A5164 /* main_multi_texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main_multi_texture.cpp; sourceTree = SOURCE_ROOT; };
+		3F599F68C013481E9D5E85A9 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8704F3691BDEDDD9008A07A9 /* Box3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Box3D.cpp; sourceTree = "<group>"; };
+		8704F36A1BDEDDD9008A07A9 /* Box3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box3D.h; sourceTree = "<group>"; };
+		8704F36B1BDEDDD9008A07A9 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		8704F36C1BDEDDD9008A07A9 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		8704F36D1BDEDDD9008A07A9 /* controls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = controls.cpp; sourceTree = "<group>"; };
+		8704F36E1BDEDDD9008A07A9 /* controls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controls.h; sourceTree = "<group>"; };
+		8704F36F1BDEDDD9008A07A9 /* CoordSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoordSystem.cpp; sourceTree = "<group>"; };
+		8704F3701BDEDDD9008A07A9 /* CoordSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordSystem.h; sourceTree = "<group>"; };
+		8704F3711BDEDDD9008A07A9 /* GLAppearance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLAppearance.cpp; sourceTree = "<group>"; };
+		8704F3721BDEDDD9008A07A9 /* GLAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAppearance.h; sourceTree = "<group>"; };
+		8704F3731BDEDDD9008A07A9 /* GLAppearanceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAppearanceBase.h; sourceTree = "<group>"; };
+		8704F3741BDEDDD9008A07A9 /* GLColoredBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLColoredBox.cpp; sourceTree = "<group>"; };
+		8704F3751BDEDDD9008A07A9 /* GLColoredBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLColoredBox.h; sourceTree = "<group>"; };
+		8704F3761BDEDDD9008A07A9 /* GLObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLObject.cpp; sourceTree = "<group>"; };
+		8704F3771BDEDDD9008A07A9 /* GLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLObject.h; sourceTree = "<group>"; };
+		8704F3781BDEDDD9008A07A9 /* GLObjects3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLObjects3D.h; sourceTree = "<group>"; };
+		8704F3791BDEDDD9008A07A9 /* GLSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLSphere.cpp; sourceTree = "<group>"; };
+		8704F37A1BDEDDD9008A07A9 /* GLSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSphere.h; sourceTree = "<group>"; };
+		8704F37B1BDEDDD9008A07A9 /* HCI557Common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HCI557Common.cpp; sourceTree = "<group>"; };
+		8704F37C1BDEDDD9008A07A9 /* HCI557Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCI557Common.h; sourceTree = "<group>"; };
+		8704F37D1BDEDDD9008A07A9 /* HCI557Datatypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HCI557Datatypes.cpp; sourceTree = "<group>"; };
+		8704F37E1BDEDDD9008A07A9 /* HCI557Datatypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCI557Datatypes.h; sourceTree = "<group>"; };
+		8704F3801BDEDDD9008A07A9 /* ModelObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelObj.cpp; sourceTree = "<group>"; };
+		8704F3811BDEDDD9008A07A9 /* ModelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelObj.h; sourceTree = "<group>"; };
+		8704F3821BDEDDD9008A07A9 /* Plane3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plane3D.cpp; sourceTree = "<group>"; };
+		8704F3831BDEDDD9008A07A9 /* Plane3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane3D.h; sourceTree = "<group>"; };
+		8704F3841BDEDDD9008A07A9 /* Shaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders.cpp; sourceTree = "<group>"; };
+		8704F3851BDEDDD9008A07A9 /* Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shaders.h; sourceTree = "<group>"; };
+		8704F3861BDEDDD9008A07A9 /* Sphere3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere3D.cpp; sourceTree = "<group>"; };
+		8704F3871BDEDDD9008A07A9 /* Sphere3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere3D.h; sourceTree = "<group>"; };
+		8704F3881BDEDDD9008A07A9 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		8704F3891BDEDDD9008A07A9 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		8704F3A61BDEE227008A07A9 /* environment.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = environment.bmp; sourceTree = "<group>"; };
+		8704F3A71BDEE227008A07A9 /* light_512_512a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = light_512_512a.bmp; sourceTree = "<group>"; };
+		8704F3A81BDEE227008A07A9 /* reflactance_map1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = reflactance_map1.bmp; sourceTree = "<group>"; };
+		8704F3A91BDEE227008A07A9 /* reflection_map.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = reflection_map.bmp; sourceTree = "<group>"; };
+		8704F3AA1BDEE227008A07A9 /* texture_brick.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture_brick.bmp; sourceTree = "<group>"; };
+		8704F3AB1BDEE227008A07A9 /* texture_earth_128x128_a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture_earth_128x128_a.bmp; sourceTree = "<group>"; };
+		8704F3AC1BDEE227008A07A9 /* texture_earth_128x128.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture_earth_128x128.bmp; sourceTree = "<group>"; };
+		8704F3AD1BDEE227008A07A9 /* texture_grass_512x512.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture_grass_512x512.bmp; sourceTree = "<group>"; };
+		8704F3AE1BDEE227008A07A9 /* texture_isu.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture_isu.bmp; sourceTree = "<group>"; };
+		8704F3AF1BDEE227008A07A9 /* texture_sun_512_512.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture_sun_512_512.bmp; sourceTree = "<group>"; };
+		8704F3B41BE0162B008A07A9 /* multi_texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = multi_texture.fs; path = ../data/shaders/multi_texture.fs; sourceTree = "<group>"; };
+		8704F3B51BE0162B008A07A9 /* multi_texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = multi_texture.vs; path = ../data/shaders/multi_texture.vs; sourceTree = "<group>"; };
+		876EEE8C1BE9538000486475 /* beach.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = beach.bmp; path = ../data/textures/beach.bmp; sourceTree = "<group>"; };
+		876EEE8D1BE9538000486475 /* city.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = city.bmp; path = ../data/textures/city.bmp; sourceTree = "<group>"; };
+		876EEE8E1BE9538000486475 /* moon.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = moon.bmp; path = ../data/textures/moon.bmp; sourceTree = "<group>"; };
+		879C4BF81BDED73E0040F0B0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		879C4BFA1BDED7450040F0B0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		879C4BFC1BDED74A0040F0B0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		879C4BFE1BDED75E0040F0B0 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../Documents/local/Cellar/glfw3/3.1.1/lib/libglfw3.a; sourceTree = "<group>"; };
+		879C4C001BDED76F0040F0B0 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../Documents/local/Cellar/glew/1.12.0/lib/libGLEW.a; sourceTree = "<group>"; };
+		879C4C021BDED7770040F0B0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AFB54BBD4FDB449DA554EADF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C88E52A48CE14EF8868E2F0E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		879C4BF71BDED7340040F0B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879C4C2E1BDED9A40040F0B0 /* OpenGL.framework in Frameworks */,
+				879C4C031BDED7770040F0B0 /* IOKit.framework in Frameworks */,
+				879C4C011BDED76F0040F0B0 /* libGLEW.a in Frameworks */,
+				879C4BFF1BDED75E0040F0B0 /* libglfw3.a in Frameworks */,
+				879C4BFB1BDED7450040F0B0 /* CoreVideo.framework in Frameworks */,
+				879C4BF91BDED73E0040F0B0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077874AF395847D6AEC4C4D4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1DF88552EE274982B4DE330A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8704F3691BDEDDD9008A07A9 /* Box3D.cpp */,
+				8704F36B1BDEDDD9008A07A9 /* camera.cpp */,
+				8704F36D1BDEDDD9008A07A9 /* controls.cpp */,
+				8704F36F1BDEDDD9008A07A9 /* CoordSystem.cpp */,
+				8704F3711BDEDDD9008A07A9 /* GLAppearance.cpp */,
+				8704F3741BDEDDD9008A07A9 /* GLColoredBox.cpp */,
+				8704F3761BDEDDD9008A07A9 /* GLObject.cpp */,
+				8704F3791BDEDDD9008A07A9 /* GLSphere.cpp */,
+				8704F37B1BDEDDD9008A07A9 /* HCI557Common.cpp */,
+				8704F37D1BDEDDD9008A07A9 /* HCI557Datatypes.cpp */,
+				8704F3801BDEDDD9008A07A9 /* ModelObj.cpp */,
+				8704F3821BDEDDD9008A07A9 /* Plane3D.cpp */,
+				8704F3861BDEDDD9008A07A9 /* Sphere3D.cpp */,
+				8704F3881BDEDDD9008A07A9 /* Texture.cpp */,
+				8704F3841BDEDDD9008A07A9 /* Shaders.cpp */,
+				1C2E457D181849919E5A5164 /* main_multi_texture.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5029F9F5DA8A403AA47100D9 /* HCI557_Multi_Texture */ = {
+			isa = PBXGroup;
+			children = (
+				1DF88552EE274982B4DE330A /* Source Files */,
+				3F599F68C013481E9D5E85A9 /* CMakeLists.txt */,
+			);
+			name = HCI557_Multi_Texture;
+			sourceTree = "<group>";
+		};
+		6D19EEC26BB2416ABD2D420C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				077874AF395847D6AEC4C4D4 /* CMake Rules */,
+				C88E52A48CE14EF8868E2F0E /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		74A18B617E4E4A169577F04A /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				8CCCDB17C18C478C83D992FB /* CMake Rules */,
+				AFB54BBD4FDB449DA554EADF /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		89FABF62DE5E40F3A5EE8BDE = {
+			isa = PBXGroup;
+			children = (
+				879C4C021BDED7770040F0B0 /* IOKit.framework */,
+				879C4C001BDED76F0040F0B0 /* libGLEW.a */,
+				879C4BFE1BDED75E0040F0B0 /* libglfw3.a */,
+				879C4BFC1BDED74A0040F0B0 /* OpenGL.framework */,
+				879C4BFA1BDED7450040F0B0 /* CoreVideo.framework */,
+				879C4BF81BDED73E0040F0B0 /* Cocoa.framework */,
+				AAD28318B6C749AD80D9B84C /* Sources */,
+				9FE5ECBABEB749D299A9BC13 /* Resources */,
+				CCC1BF2E15CC4436A13838EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CCCDB17C18C478C83D992FB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9FE5ECBABEB749D299A9BC13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8704F3A61BDEE227008A07A9 /* environment.bmp */,
+				8704F3A71BDEE227008A07A9 /* light_512_512a.bmp */,
+				8704F3A81BDEE227008A07A9 /* reflactance_map1.bmp */,
+				876EEE8C1BE9538000486475 /* beach.bmp */,
+				876EEE8D1BE9538000486475 /* city.bmp */,
+				876EEE8E1BE9538000486475 /* moon.bmp */,
+				8704F3A91BDEE227008A07A9 /* reflection_map.bmp */,
+				8704F3AA1BDEE227008A07A9 /* texture_brick.bmp */,
+				8704F3AB1BDEE227008A07A9 /* texture_earth_128x128_a.bmp */,
+				8704F3B41BE0162B008A07A9 /* multi_texture.fs */,
+				8704F3B51BE0162B008A07A9 /* multi_texture.vs */,
+				8704F3AC1BDEE227008A07A9 /* texture_earth_128x128.bmp */,
+				8704F3AD1BDEE227008A07A9 /* texture_grass_512x512.bmp */,
+				8704F3AE1BDEE227008A07A9 /* texture_isu.bmp */,
+				8704F3AF1BDEE227008A07A9 /* texture_sun_512_512.bmp */,
+				8704F36A1BDEDDD9008A07A9 /* Box3D.h */,
+				8704F36C1BDEDDD9008A07A9 /* camera.h */,
+				8704F36E1BDEDDD9008A07A9 /* controls.h */,
+				8704F3701BDEDDD9008A07A9 /* CoordSystem.h */,
+				8704F3721BDEDDD9008A07A9 /* GLAppearance.h */,
+				8704F3731BDEDDD9008A07A9 /* GLAppearanceBase.h */,
+				8704F3751BDEDDD9008A07A9 /* GLColoredBox.h */,
+				8704F3771BDEDDD9008A07A9 /* GLObject.h */,
+				8704F3781BDEDDD9008A07A9 /* GLObjects3D.h */,
+				8704F37A1BDEDDD9008A07A9 /* GLSphere.h */,
+				8704F37C1BDEDDD9008A07A9 /* HCI557Common.h */,
+				8704F37E1BDEDDD9008A07A9 /* HCI557Datatypes.h */,
+				8704F3811BDEDDD9008A07A9 /* ModelObj.h */,
+				8704F3831BDEDDD9008A07A9 /* Plane3D.h */,
+				8704F3851BDEDDD9008A07A9 /* Shaders.h */,
+				8704F3871BDEDDD9008A07A9 /* Sphere3D.h */,
+				8704F3891BDEDDD9008A07A9 /* Texture.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AAD28318B6C749AD80D9B84C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6D19EEC26BB2416ABD2D420C /* ALL_BUILD */,
+				5029F9F5DA8A403AA47100D9 /* HCI557_Multi_Texture */,
+				74A18B617E4E4A169577F04A /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		CCC1BF2E15CC4436A13838EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E9CABAD812043F89A695554 /* HCI557_Multi_Texture */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26FAF48B519B45C99C09C174 /* HCI557_Multi_Texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492396B38E8D44238668E587 /* Build configuration list for PBXNativeTarget "HCI557_Multi_Texture" */;
+			buildPhases = (
+				F5AC21CBF1EF44E8B2EAC40E /* Sources */,
+				879C4BF71BDED7340040F0B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7CFC266A0474C0DA68026E4 /* PBXTargetDependency */,
+			);
+			name = HCI557_Multi_Texture;
+			productName = HCI557_Multi_Texture;
+			productReference = 0E9CABAD812043F89A695554 /* HCI557_Multi_Texture */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BDCB5FD28FA42D88C83AC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = DC7E32C9B0DD4DFC9B249E13 /* Build configuration list for PBXProject "HCI557_Multi_Texture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89FABF62DE5E40F3A5EE8BDE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1691E3B91255487EAB4CB3E5 /* ALL_BUILD */,
+				26FAF48B519B45C99C09C174 /* HCI557_Multi_Texture */,
+				BC2F3EC3E5CC42FAA5BF6F03 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76B5E2B1CD4B4982B96F3C0A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 4/13_Multi_Texturing -f /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 4/13_Multi_Texturing/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		9542CE86FE1B438282066E20 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 4/13_Multi_Texturing -f /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 4/13_Multi_Texturing/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5AC21CBF1EF44E8B2EAC40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8704F3961BDEDDD9008A07A9 /* Plane3D.cpp in Sources */,
+				8704F38B1BDEDDD9008A07A9 /* camera.cpp in Sources */,
+				8704F3991BDEDDD9008A07A9 /* Texture.cpp in Sources */,
+				8704F38A1BDEDDD9008A07A9 /* Box3D.cpp in Sources */,
+				8704F38D1BDEDDD9008A07A9 /* CoordSystem.cpp in Sources */,
+				8704F3921BDEDDD9008A07A9 /* HCI557Common.cpp in Sources */,
+				8704F3971BDEDDD9008A07A9 /* Shaders.cpp in Sources */,
+				8704F3931BDEDDD9008A07A9 /* HCI557Datatypes.cpp in Sources */,
+				8704F38E1BDEDDD9008A07A9 /* GLAppearance.cpp in Sources */,
+				8704F3901BDEDDD9008A07A9 /* GLObject.cpp in Sources */,
+				8704F38C1BDEDDD9008A07A9 /* controls.cpp in Sources */,
+				8704F38F1BDEDDD9008A07A9 /* GLColoredBox.cpp in Sources */,
+				8704F3911BDEDDD9008A07A9 /* GLSphere.cpp in Sources */,
+				8DD154661C5549EBA779682F /* main_multi_texture.cpp in Sources */,
+				8704F3981BDEDDD9008A07A9 /* Sphere3D.cpp in Sources */,
+				8704F3951BDEDDD9008A07A9 /* ModelObj.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78ADC3AB18D648FBB2D463E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26FAF48B519B45C99C09C174 /* HCI557_Multi_Texture */;
+			targetProxy = AF9AF0C39697405A9412BAE0 /* PBXContainerItemProxy */;
+		};
+		7E66B0E956F241AF83F22948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC2F3EC3E5CC42FAA5BF6F03 /* ZERO_CHECK */;
+			targetProxy = A15C70C213AE4FB0AC91696F /* PBXContainerItemProxy */;
+		};
+		F7CFC266A0474C0DA68026E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC2F3EC3E5CC42FAA5BF6F03 /* ZERO_CHECK */;
+			targetProxy = 8B4427737FC04777A05C4A47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16C9297DD3B941AA8C1EC6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		18C7C93410104570AFE7C720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/build";
+			};
+			name = Debug;
+		};
+		225744DAD86549BD918F3D4D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib,
+					/Users/Cora/Documents/local/Cellar/glew/1.12.0/lib,
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = HCI557_Multi_Texture;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		252F47CC3D2C44F8B848FA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		26B10BADCF4B49D49E23020A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		2B8DA40567CB486494632AAC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3C4C12A78FEE4D6789CB5833 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/build";
+			};
+			name = MinSizeRel;
+		};
+		45E6B6F20FA54A1A82685C22 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib,
+					/Users/Cora/Documents/local/Cellar/glew/1.12.0/lib,
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = HCI557_Multi_Texture;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		633F9D9F53414B86AB284B92 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		86533411EB414B35AE268F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib,
+					/Users/Cora/Documents/local/Cellar/glew/1.12.0/lib,
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = HCI557_Multi_Texture;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		B3C768C7AA2A44C480728121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		BF860EDC3CB64D99A73F30B2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/build";
+			};
+			name = RelWithDebInfo;
+		};
+		C8A451D8DDA049868DEF7432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/build";
+			};
+			name = Release;
+		};
+		E00361756A7546E98FF5FFDE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EC93779A8CCD47E995AB9B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib,
+					/Users/Cora/Documents/local/Cellar/glew/1.12.0/lib,
+					"/Users/Cora/Documents/local/Cellar/**",
+				);
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = HCI557_Multi_Texture;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		EF0171EA500547E1B2B5F64B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 4/13_Multi_Texturing";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492396B38E8D44238668E587 /* Build configuration list for PBXNativeTarget "HCI557_Multi_Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC93779A8CCD47E995AB9B82 /* Debug */,
+				86533411EB414B35AE268F01 /* Release */,
+				225744DAD86549BD918F3D4D /* MinSizeRel */,
+				45E6B6F20FA54A1A82685C22 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		913566153D204E67AA62D13D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C9297DD3B941AA8C1EC6C5 /* Debug */,
+				252F47CC3D2C44F8B848FA56 /* Release */,
+				EF0171EA500547E1B2B5F64B /* MinSizeRel */,
+				633F9D9F53414B86AB284B92 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D7A2770392D343A7B790A815 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C768C7AA2A44C480728121 /* Debug */,
+				26B10BADCF4B49D49E23020A /* Release */,
+				2B8DA40567CB486494632AAC /* MinSizeRel */,
+				E00361756A7546E98FF5FFDE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC7E32C9B0DD4DFC9B249E13 /* Build configuration list for PBXProject "HCI557_Multi_Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C7C93410104570AFE7C720 /* Debug */,
+				C8A451D8DDA049868DEF7432 /* Release */,
+				3C4C12A78FEE4D6789CB5833 /* MinSizeRel */,
+				BF860EDC3CB64D99A73F30B2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BDCB5FD28FA42D88C83AC78 /* Project object */;
+}

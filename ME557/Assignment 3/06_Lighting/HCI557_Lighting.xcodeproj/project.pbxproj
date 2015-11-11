@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A313E101EDA94A168AD555EF /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ADB928DD3353419595FCFDE9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7B304DAE4D87480799262B0D /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DD1916B8E10C4B47BC6B109F /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8371BFA443BD45DCA47824B4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E08BB942846B483B94B46AB0 /* CMake Rules */,
+			);
+			dependencies = (
+				A8770B4626CE456AA42C3857 /* PBXTargetDependency */,
+				5EA1807FB9BB45EA969A2C16 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00E80318600147CCAB8CBA70 /* HCI557Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37303C817B81499FB7604B41 /* HCI557Common.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1C67B51503C14F2A8975D42B /* CoordSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CE07F37A0A146D9BCB42CB1 /* CoordSystem.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3821F1929417442682B5FBD1 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561816894511417EA4ACC4D8 /* Shaders.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5E197D429F8142B485F25AE3 /* GLObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3F88D96CDAC4855B7ED96CB /* GLObject.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7194C62243E14C3A95AF3877 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D7B958964D849E91D069 /* controls.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		87F00FCA1BBF3A86000EF96F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F00FC91BBF3A86000EF96F /* libglfw3.a */; };
+		87F00FCC1BBF3A8B000EF96F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F00FCB1BBF3A8B000EF96F /* CoreVideo.framework */; };
+		87F00FCE1BBF3A91000EF96F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F00FCD1BBF3A91000EF96F /* IOKit.framework */; };
+		87F00FD01BBF3A99000EF96F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F00FCF1BBF3A99000EF96F /* OpenGL.framework */; };
+		87F00FD21BBF3AD3000EF96F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F00FD11BBF3AD3000EF96F /* Cocoa.framework */; };
+		988206850F8E48A3A4A1A1F1 /* GLSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 465DE01139264511BA47300D /* GLSphere.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AB3AED8E39164205AB1BABA6 /* GLAppearance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC5F8F02C940BBAC1BC363 /* GLAppearance.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		ADD422EE2E37403E9A6AF5F2 /* main_lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20587ACA077F461AB58D1836 /* main_lighting.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC1AD95110144EFB3595AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 635B21A4CA5D4D91AA15BBCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A313E101EDA94A168AD555EF;
+			remoteInfo = ZERO_CHECK;
+		};
+		67453008B04245E596991B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 635B21A4CA5D4D91AA15BBCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A313E101EDA94A168AD555EF;
+			remoteInfo = ZERO_CHECK;
+		};
+		B1C2DBCBFCA3446CA1E1CF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 635B21A4CA5D4D91AA15BBCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836645E0028044CBB769E1D6;
+			remoteInfo = HCI557_Lighting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF127D31A2D4F8386A239FB /* GLAppearance.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLAppearance.h; path = ../gl_common/GLAppearance.h; sourceTree = SOURCE_ROOT; };
+		20587ACA077F461AB58D1836 /* main_lighting.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main_lighting.cpp; sourceTree = SOURCE_ROOT; };
+		2B7CECCE7ED9412CAA0FAED7 /* Shaders.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shaders.h; path = ../gl_common/Shaders.h; sourceTree = SOURCE_ROOT; };
+		2DB4822A819E4D339D299BAB /* HCI557Common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HCI557Common.h; path = ../gl_common/HCI557Common.h; sourceTree = SOURCE_ROOT; };
+		2DBC5F8F02C940BBAC1BC363 /* GLAppearance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLAppearance.cpp; path = ../gl_common/GLAppearance.cpp; sourceTree = SOURCE_ROOT; };
+		37303C817B81499FB7604B41 /* HCI557Common.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HCI557Common.cpp; path = ../gl_common/HCI557Common.cpp; sourceTree = SOURCE_ROOT; };
+		38E7D7B958964D849E91D069 /* controls.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = controls.cpp; path = ../gl_common/controls.cpp; sourceTree = SOURCE_ROOT; };
+		3CE07F37A0A146D9BCB42CB1 /* CoordSystem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CoordSystem.cpp; path = ../gl_common/CoordSystem.cpp; sourceTree = SOURCE_ROOT; };
+		465DE01139264511BA47300D /* GLSphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLSphere.cpp; path = ../gl_common/GLSphere.cpp; sourceTree = SOURCE_ROOT; };
+		561816894511417EA4ACC4D8 /* Shaders.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shaders.cpp; path = ../gl_common/Shaders.cpp; sourceTree = SOURCE_ROOT; };
+		59CE15D838CF45C39027CADF /* CoordSystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CoordSystem.h; path = ../gl_common/CoordSystem.h; sourceTree = SOURCE_ROOT; };
+		7826F8DE57144E66B11C8D92 /* GLSphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLSphere.h; path = ../gl_common/GLSphere.h; sourceTree = SOURCE_ROOT; };
+		87F00FC91BBF3A86000EF96F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../Documents/local/Cellar/glfw3/3.1.1/lib/libglfw3.a; sourceTree = "<group>"; };
+		87F00FCB1BBF3A8B000EF96F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		87F00FCD1BBF3A91000EF96F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		87F00FCF1BBF3A99000EF96F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		87F00FD11BBF3AD3000EF96F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A0599CFA72684527B0D3B3FA /* HCI557Datatypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HCI557Datatypes.h; path = ../gl_common/HCI557Datatypes.h; sourceTree = SOURCE_ROOT; };
+		A699763574064F3A8FBC249A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B7CB780D1DF24BFE960BDD9F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BBF29BEC31DF42C78397C92A /* GLObject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLObject.h; path = ../gl_common/GLObject.h; sourceTree = SOURCE_ROOT; };
+		BC0D6D5025D645ACA4B5011C /* HCI557_Lighting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HCI557_Lighting; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF37F623C3F34E36B3E52662 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E3F88D96CDAC4855B7ED96CB /* GLObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLObject.cpp; path = ../gl_common/GLObject.cpp; sourceTree = SOURCE_ROOT; };
+		FB3F27F99DD24CDA97EE096E /* controls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = controls.h; path = ../gl_common/controls.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F00FC81BBF3A76000EF96F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F00FD21BBF3AD3000EF96F /* Cocoa.framework in Frameworks */,
+				87F00FD01BBF3A99000EF96F /* OpenGL.framework in Frameworks */,
+				87F00FCE1BBF3A91000EF96F /* IOKit.framework in Frameworks */,
+				87F00FCC1BBF3A8B000EF96F /* CoreVideo.framework in Frameworks */,
+				87F00FCA1BBF3A86000EF96F /* libglfw3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1536708776FF4C0B9DFFFABB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		18D39729B518409EB0A17393 = {
+			isa = PBXGroup;
+			children = (
+				87F00FD11BBF3AD3000EF96F /* Cocoa.framework */,
+				87F00FCF1BBF3A99000EF96F /* OpenGL.framework */,
+				87F00FCD1BBF3A91000EF96F /* IOKit.framework */,
+				87F00FCB1BBF3A8B000EF96F /* CoreVideo.framework */,
+				87F00FC91BBF3A86000EF96F /* libglfw3.a */,
+				61C85E4CD7814222BA314F81 /* Sources */,
+				1536708776FF4C0B9DFFFABB /* Resources */,
+				1D13D6ADDBFE4EB9BC372C5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D13D6ADDBFE4EB9BC372C5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D6D5025D645ACA4B5011C /* HCI557_Lighting */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41A57E9B403042D2931BE8D6 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				4EC194D5FB5B49B0B1CD20F9 /* CMake Rules */,
+				A699763574064F3A8FBC249A /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		4EC194D5FB5B49B0B1CD20F9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5442600BA3B940EDA7C80A3D /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				59CE15D838CF45C39027CADF /* CoordSystem.h */,
+				0CF127D31A2D4F8386A239FB /* GLAppearance.h */,
+				BBF29BEC31DF42C78397C92A /* GLObject.h */,
+				7826F8DE57144E66B11C8D92 /* GLSphere.h */,
+				2DB4822A819E4D339D299BAB /* HCI557Common.h */,
+				A0599CFA72684527B0D3B3FA /* HCI557Datatypes.h */,
+				2B7CECCE7ED9412CAA0FAED7 /* Shaders.h */,
+				FB3F27F99DD24CDA97EE096E /* controls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5DB2DB16F56E4D79865FDA5C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		61C85E4CD7814222BA314F81 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				918F8D56BD00461D8B8F3387 /* ALL_BUILD */,
+				41A57E9B403042D2931BE8D6 /* ZERO_CHECK */,
+				F2D1F5DB4B7247899E5CDC6C /* HCI557_Lighting */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		918F8D56BD00461D8B8F3387 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				5DB2DB16F56E4D79865FDA5C /* CMake Rules */,
+				B7CB780D1DF24BFE960BDD9F /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		DE9AB31A04E44FDEA4EFBAF0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				20587ACA077F461AB58D1836 /* main_lighting.cpp */,
+				3CE07F37A0A146D9BCB42CB1 /* CoordSystem.cpp */,
+				2DBC5F8F02C940BBAC1BC363 /* GLAppearance.cpp */,
+				E3F88D96CDAC4855B7ED96CB /* GLObject.cpp */,
+				465DE01139264511BA47300D /* GLSphere.cpp */,
+				37303C817B81499FB7604B41 /* HCI557Common.cpp */,
+				561816894511417EA4ACC4D8 /* Shaders.cpp */,
+				38E7D7B958964D849E91D069 /* controls.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F2D1F5DB4B7247899E5CDC6C /* HCI557_Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				DE9AB31A04E44FDEA4EFBAF0 /* Source Files */,
+				5442600BA3B940EDA7C80A3D /* Header Files */,
+				DF37F623C3F34E36B3E52662 /* CMakeLists.txt */,
+			);
+			name = HCI557_Lighting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		836645E0028044CBB769E1D6 /* HCI557_Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B61AFEB1CB447F8D3DAAD5 /* Build configuration list for PBXNativeTarget "HCI557_Lighting" */;
+			buildPhases = (
+				B29EEDCE904A4AF08E099903 /* Sources */,
+				87F00FC81BBF3A76000EF96F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				314BF72849AB49A19AB8A208 /* PBXTargetDependency */,
+			);
+			name = HCI557_Lighting;
+			productName = HCI557_Lighting;
+			productReference = BC0D6D5025D645ACA4B5011C /* HCI557_Lighting */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		635B21A4CA5D4D91AA15BBCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 8592B454C7C64B9FAC72F683 /* Build configuration list for PBXProject "HCI557_Lighting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18D39729B518409EB0A17393;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD1916B8E10C4B47BC6B109F /* ALL_BUILD */,
+				836645E0028044CBB769E1D6 /* HCI557_Lighting */,
+				A313E101EDA94A168AD555EF /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B304DAE4D87480799262B0D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 3/06_Lighting -f /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 3/06_Lighting/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E08BB942846B483B94B46AB0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 3/06_Lighting -f /Users/Cora/ME_577_2015_NL/ME557/Assignment\\ 3/06_Lighting/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B29EEDCE904A4AF08E099903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD422EE2E37403E9A6AF5F2 /* main_lighting.cpp in Sources */,
+				1C67B51503C14F2A8975D42B /* CoordSystem.cpp in Sources */,
+				AB3AED8E39164205AB1BABA6 /* GLAppearance.cpp in Sources */,
+				5E197D429F8142B485F25AE3 /* GLObject.cpp in Sources */,
+				988206850F8E48A3A4A1A1F1 /* GLSphere.cpp in Sources */,
+				00E80318600147CCAB8CBA70 /* HCI557Common.cpp in Sources */,
+				3821F1929417442682B5FBD1 /* Shaders.cpp in Sources */,
+				7194C62243E14C3A95AF3877 /* controls.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		314BF72849AB49A19AB8A208 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A313E101EDA94A168AD555EF /* ZERO_CHECK */;
+			targetProxy = 67453008B04245E596991B28 /* PBXContainerItemProxy */;
+		};
+		5EA1807FB9BB45EA969A2C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A313E101EDA94A168AD555EF /* ZERO_CHECK */;
+			targetProxy = 4CC1AD95110144EFB3595AB6 /* PBXContainerItemProxy */;
+		};
+		A8770B4626CE456AA42C3857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836645E0028044CBB769E1D6 /* HCI557_Lighting */;
+			targetProxy = B1C2DBCBFCA3446CA1E1CF9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E00C157382541E6A1CB7FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		1F8C3E360F4B4E5BB9F1C25C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/build";
+			};
+			name = MinSizeRel;
+		};
+		256DCF49D10C4ED0B0D1F52D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/build";
+			};
+			name = RelWithDebInfo;
+		};
+		2B0E5BF7401F43678C294394 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = /Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HCI557_Lighting;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		4914E6D5B4F64F2187DD596B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		7554456D98BE4CF1B27F1174 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8FFB8296207D4E06BA4A4008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/build";
+			};
+			name = Debug;
+		};
+		9297A3D969D74724A4D3763A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		A019BE5D6BA44E628898A270 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A4E0457530D14082A890F8AD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B6E0DF55E37A46C8A04302C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = /Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HCI557_Lighting;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CF00D5E184664D77B56C66D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		D7AF485AC4224DC18028859E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = /Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HCI557_Lighting;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D911AA506EDA42F2A37B106A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk;
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/build";
+			};
+			name = Release;
+		};
+		DB04AA524C664AA08C8F843B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E374196C35BF49448E38AB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Cora/ME_577_2015_NL/library/SDK/include,
+					"\"/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/../gl_common\"",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = /Users/Cora/Documents/local/Cellar/glfw3/3.1.1/lib;
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libGLEW.dylib,
+					/usr/local/lib/libglfw.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HCI557_Lighting;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B61AFEB1CB447F8D3DAAD5 /* Build configuration list for PBXNativeTarget "HCI557_Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E374196C35BF49448E38AB3E /* Debug */,
+				B6E0DF55E37A46C8A04302C0 /* Release */,
+				D7AF485AC4224DC18028859E /* MinSizeRel */,
+				2B0E5BF7401F43678C294394 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8371BFA443BD45DCA47824B4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB04AA524C664AA08C8F843B /* Debug */,
+				9297A3D969D74724A4D3763A /* Release */,
+				7554456D98BE4CF1B27F1174 /* MinSizeRel */,
+				A4E0457530D14082A890F8AD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8592B454C7C64B9FAC72F683 /* Build configuration list for PBXProject "HCI557_Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FFB8296207D4E06BA4A4008 /* Debug */,
+				D911AA506EDA42F2A37B106A /* Release */,
+				1F8C3E360F4B4E5BB9F1C25C /* MinSizeRel */,
+				256DCF49D10C4ED0B0D1F52D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ADB928DD3353419595FCFDE9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E00C157382541E6A1CB7FD7 /* Debug */,
+				CF00D5E184664D77B56C66D0 /* Release */,
+				A019BE5D6BA44E628898A270 /* MinSizeRel */,
+				4914E6D5B4F64F2187DD596B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 635B21A4CA5D4D91AA15BBCB /* Project object */;
+}

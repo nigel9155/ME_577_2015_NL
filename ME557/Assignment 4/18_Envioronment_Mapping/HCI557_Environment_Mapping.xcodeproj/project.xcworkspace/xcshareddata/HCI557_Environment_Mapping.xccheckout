@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B9A2167-4009-4C7C-A091-E791EE1174EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HCI557_Environment_Mapping</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D6E679C9BBD7C0A9F62DFD666EA5E912BB6A5490</key>
+		<string>https://github.com/nigel9155/ME_577_2015_NL.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ME557/Assignment 4/18_Envioronment_Mapping/HCI557_Environment_Mapping.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D6E679C9BBD7C0A9F62DFD666EA5E912BB6A5490</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nigel9155/ME_577_2015_NL.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D6E679C9BBD7C0A9F62DFD666EA5E912BB6A5490</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D6E679C9BBD7C0A9F62DFD666EA5E912BB6A5490</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ME_577_2015_NL</string>
+		</dict>
+	</array>
+</dict>
+</plist>

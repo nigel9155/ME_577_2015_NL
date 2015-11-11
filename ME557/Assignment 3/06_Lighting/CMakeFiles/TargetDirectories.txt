@@ -1,0 +1,3 @@
+/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/CMakeFiles/ALL_BUILD.dir
+/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/CMakeFiles/ZERO_CHECK.dir
+/Users/Cora/ME_577_2015_NL/ME557/Assignment 3/06_Lighting/CMakeFiles/HCI557_Lighting.dir
